@@ -1,0 +1,587 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  min-width: 1200px;
+  margin: 0 auto;
+  font-family: "Pretendard", sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../images/line.png");
+  background-size: 100% 3320px;
+  background-position: 0px 100px;
+  background-repeat: no-repeat;
+}
+
+/* 헤더 섹션 */
+header {
+  width: 100%; 
+  max-width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#logo>a>img {
+  width: 120px;
+}
+
+#menu {
+  flex: 1;
+}
+
+#navi {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+#navi>li {
+  position: relative;
+  flex: 1;
+  max-width: 150px;
+}
+
+#navi>li>a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #333;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+}
+
+#navi>li>a::after {
+  content:"";
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+#navi>li>a:hover {
+  font-weight: bold;
+}
+
+#navi>li>a:hover::after {
+  width: 100%;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 3;
+  width: 180px;
+}
+
+.submenu>li>a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  display: block;
+  text-align: left;
+  position: relative;
+  padding: 10px;
+}
+
+.submenu>li>a>span {
+  position: relative;
+}
+
+.submenu>li>a>span::after {
+  content:"";
+  position: absolute;
+  right: -10px;
+  top: 13%;
+  border-radius: 50%;
+  background-color: #00714f;
+}
+
+.submenu>li>a:hover {
+  color: #00714f;
+  font-weight: bold;
+}
+
+.submenu>li>a:hover>span::after {
+  width: 6px;
+  height: 6px;
+}
+
+#menu_icon>a {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 20px;
+}
+
+#menu_icon>a:nth-child(2) {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/join.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 13px;
+}
+
+/* 배너 섹션*/
+#brand_banner {
+  height: 570px;
+  background-image: url("../images/minumsa_sub_banner.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#brand_banner>h4 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#brand_banner>p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* 민음사 비전 섹션 */
+#vision {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#vision>h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+#vision_txt {
+  position: relative;
+}
+
+#vision_txt>h6 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#vision_txt>p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#vision_txt::before {
+  content:"";
+  position:absolute;
+  top: -25px;
+  right: 80px;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #f0f0f0;
+  border-radius: 50%;
+}
+
+#vision_txt::after {
+  content:"";
+  position:absolute;
+  top: -25px;
+  right: -15px;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #f0f0f0;
+}
+
+/* 민음사 창립 연도 섹션 */
+#group {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 250px;
+  position: relative;
+}
+
+#group_txt {
+  display: flex;
+  flex-direction: column;
+}
+
+#group_txt>h4 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#group_txt>h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#group_txt>p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#group_year {
+  margin-top: 100px;
+  font-size: 120px;
+  font-weight: bold;
+  color: #0a9b70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#group_year>span {
+  font-size: 36px;
+  font-weight: 400;
+  color: #333;
+  margin-right: 30px;
+}
+
+#group::after {
+  content: "";
+  position: absolute;
+  top:35%;
+  right: -15%;
+  z-index: -1;
+  width: 650px;
+  height: 350px;
+  background-image: url("../images/minumsa_middle.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+/* 민음사 역사 섹션 */
+#history {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+
+#history>h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+#history_photo {
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+#history_photo>ul>li {
+  display: block;
+}
+
+#history_photo>ul>li>img {
+  display: block;
+}
+
+#history_txt {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 60px;
+  position: relative;
+}
+
+#history_txt>p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#history_txt>p::before {
+  content:"";
+  position:absolute;
+  top: -3%;
+  width: 55px;
+  height: 4px;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+#history_about {
+  display: flex;
+  flex-direction: column;
+}
+
+#start>h4,
+#middle>h4,
+#final>h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#start>h2,
+#middle>h2,
+#final>h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#start>p,
+#middle>p,
+#final>p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#start, #middle {margin-bottom: 60px;}
+
+#history_hope {
+  font-size: 24px;
+  line-height: 1.6;
+  color: #0a9b70;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+
+#history_hope::after {
+  content:"";
+  width: 220px;
+  height: 160px;
+  background-image: url("../images/years.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 민음사 하위 브랜드 섹션 */
+#brandzip {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 200px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+#brandzip>div {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+
+#brandzip::before {
+  content:"";
+  position:absolute;
+  top: -10%;
+  width: 1200px;
+  height: 2px;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.brand-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-txt>h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.brand-txt>p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.brand-item>img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+/* 민음사 ci 섹션 */
+#brand_ci {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto; 
+  margin-top: 250px;
+  position: relative;
+}
+
+#brand_mean {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#brand_mean>img {
+  width: 300px;
+  height: 80px;
+}
+
+#brand_vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  text-align: center;
+}
+
+#brand_vision>h4 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#brand_vision>p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 40px;
+}
+
+#brand_vision>p>span {
+  color: #0a9b70;
+  font-weight: bold;
+}
+
+#book>ul>li:nth-child(1) img{
+  position: absolute;
+  top: -10%;
+  left: -8%;
+  width: 220px;
+  height: 220px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#book>ul>li:nth-child(2) img{
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 220px;
+  height: 220px;
+  z-index: 1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#book>ul>li:nth-child(3) img{
+  position: absolute;
+  top: 40%;
+  left: -25%;
+  width: 350px;
+  height: 200px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#book>ul>li:nth-child(4) img{
+  position: absolute;
+  top: 30%;
+  right: -25%;
+  width: 350px;
+  height: 200px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 하단 푸터 섹션 */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 100px;
+}
+
+#footer-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btlogo>a>img { 
+  width: 115px;
+  height: 50px;
+  padding-bottom: 50px;
+}
+
+#footer-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer_about {
+  font-size: 13px;
+  display: flex;
+  font-weight: lighter;
+  line-height: 1.8;
+}
+
+#footer_about>li>a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer_about>li::after {
+  content:"|";
+  margin: 0 5px;
+}
+
+#footer_about>li:last-child::after {
+  content:"";
+}
+
+#footer_txt {
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: lighter;
+}
+
+#sitelist {
+  width: 160px;
+  height: 30px;
+  margin-bottom: 80px;
+  font-size: 13px;
+}
+  

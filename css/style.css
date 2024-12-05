@@ -1,0 +1,1112 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  background-color: black;
+  font-family: "Pretendard", sans-serif;
+}
+
+body {
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+/* 헤더 섹션 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#logo > img {
+  width: 120px;
+  height: auto;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  gap: 50px;
+}
+
+#menu > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* 메인 섹션 */
+#content0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+#intro-text {
+  text-align: left;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  z-index: 2;
+  color: white;
+}
+
+#intro-text > h4 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#name {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#sub-name {
+  font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+#eggs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  position: relative;
+}
+
+#metalegg {
+  width: 510px;
+  height: 650px;
+  margin-bottom: 150px;
+}
+
+#gardenegg {
+  width: 250px;
+  height: 330px;
+  margin-left: 180px;
+}
+
+#furegg {
+  width: 380px;
+  height: 490px;
+  margin-bottom: 250px;
+}
+
+#main-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+#title-text {
+  width: 100%;
+}
+
+/* 어바웃1 섹션 */
+#content1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  padding: 0 50px;
+}
+
+#egg-shapes {
+  position: relative;
+  background-image: url("../images/eggcard2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+#egglogo {
+  font-family: "Pixelify Sans", serif;
+  font-size: 45px;
+  font-weight: 700;
+  position: absolute;
+  top: 23%;
+  left: 43%;
+  line-height: 1.2;
+}
+
+#eggname1 {
+  font-size: 38px;
+}
+
+#eggname2 {
+  padding-left: 25px;
+}
+
+#eggname3 {
+  font-size: 14px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: lighter;
+  padding-left: 170px;
+}
+
+#egglogo2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 23%;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+
+#egglogo3 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  position: absolute;
+  top: 73%;
+  left: 38%;
+}
+
+#content1-right {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 50px;
+  color: white;
+  position: relative;
+}
+
+#content1-right > h3 {
+  font-size: 31px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#content1-right > p {
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+#content1-right::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 30%;
+  right:15%;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/pixel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#highlight {
+  border: 2px solid #fff59a;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+/* 어바웃2 섹션 */
+#content2 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+#content2-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content2-left > h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: white;
+}
+
+#plate-egg {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  background-image: url("../images/dish.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#onegg {
+  width: 165px;
+}
+
+#content2::before {
+  content:"";
+  width: 180px;
+  height: 480px;
+  position: absolute;
+  left: 40%;
+  background-image: url("../images/knife.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#profile {
+  display: flex;
+  margin-top: 30px;
+  margin-right: 20px;
+  font-size: 21px;
+  line-height: 1.8;
+  color: white;
+}
+
+#profile > ul > li > span {
+  display: inline-block;
+  width: 100px;
+}
+
+#content2-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 260px;
+}
+
+#education > h4,
+#experience > h4,
+#skill > h4 {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#education > ul,
+#experience > ul,
+#skill > ul {
+  color: white;
+}
+
+#education > ul > li,
+#experience > ul > li,
+#skill > ul > li {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#education > ul > li > span,
+#experience > ul > li > span,
+#skill > ul > li > span {
+  display: inline-block;
+  width: 240px;
+}
+
+#skill > ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 330px;
+}
+
+#skill > ul > li {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+#education,
+#experience {
+  margin-bottom: 40px;
+}
+
+/* 민음사 리뉴얼 디자인 섹션 */
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#project-title {
+  position: absolute;
+  bottom: 0px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22.1vw;
+  color: white;
+  white-space: nowrap;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 40px;
+  margin-bottom: 10%;
+}
+
+#content-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#content-txt {
+  font-size: 21px;
+  line-height: 1.6;
+  color: white;
+}
+
+#project-content > a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/enterarrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+}
+
+#project-section {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#project-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 27%;
+  width: 22%;
+  height: 55%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+#project-section > img {
+  width: 56%;
+  z-index: 2;
+}
+
+/* 프롬잇 리뉴얼 디자인 섹션 */
+#project2-title {
+  position: absolute;
+  bottom: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 23vw;
+  color: white;
+  white-space: nowrap;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#project2-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project2-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 27%;
+  width: 22%;
+  height: 65%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+#project2-section > img {
+  width: 61%;
+  margin-bottom: 20px;
+  padding-left: 30%;
+  z-index: 2;
+}
+
+#project2-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-bottom: 10%;
+}
+
+#content2-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#content2-txt {
+  font-size: 21px;
+  line-height: 1.6;
+  color: white;
+}
+
+#project2-content > a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/enterarrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+}
+
+/* 서울시립미술관 리뉴얼 디자인 섹션 */
+#project3-title {
+  position: absolute;
+  bottom: 0px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22.1vw;
+  color: white;
+  white-space: nowrap;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#project3-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 40px;
+  margin-bottom: 12%;
+}
+
+#content3-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#content3-txt {
+  font-size: 21px;
+  line-height: 1.6;
+  color: white;
+}
+
+#project3-content > a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/enterarrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+}
+
+#project3-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project3-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 27%;
+  width: 22%;
+  height: 55%;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+#project3-section > img {
+  width: 85%;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+/* 아더작업물 섹션 */
+#content7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#desktop-banner {
+  width: 45%;
+}
+
+#desktop-banner > img {
+  width: 100%;
+}
+
+#banner-txt {
+  white-space: nowrap;
+}
+
+#banner-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-right: 55px;
+  margin-bottom: 40px;
+}
+
+#banner-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+  margin-left: 45px;
+  margin-bottom: 40px;
+}
+
+#banner-other {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px;
+}
+
+#mobile-banner {
+  width: 30%;
+}
+
+#mobile-banner > img {
+  width: 100%;
+}
+
+/* 아더작업물(배너디자인) 섹션 */
+#content8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#content8 > h6 {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  padding-right: 60%;
+  text-align: left;
+}
+
+#container {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(12, 1fr); 
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  cursor: pointer;
+}
+
+.grid-item > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.first-item {
+  grid-column: 1 / 8;
+  grid-row: 1 / 3;
+}
+.two-item {
+  grid-column: 8 / 13;
+  grid-row: 1 / 2;
+}
+.three-item {
+  grid-column: 8 / 13;
+  grid-row: 2 / 3;
+}
+.four-item {
+  grid-column: 1 / 6;
+  grid-row: 3 / 5;
+}
+.five-item {
+  grid-column: 6 / 11;
+  grid-row: 3 / 5;
+}
+.six-item {
+  grid-column: 11 / 13;
+  grid-row: 3 / 5;
+}
+
+#overlay {
+  display: none;                
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);  
+  z-index: 1000;
+}
+
+#overlay .photo {
+  max-width: 80vw;
+  max-height: 80vh; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 이벤트 공지사항 디자인 */
+#content9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+#desktop-notice {
+  width: 45%;
+  margin-right: 7px;
+}
+
+#desktop-notice > img {
+  width: 100%;
+}
+
+#notice-txt {
+  white-space: nowrap;
+  margin: 25px;
+}
+
+#notice-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  margin-right: 75px;
+  margin-bottom: 40px;
+}
+
+#notice-description {
+  font-size : 16px;
+  text-align: right;
+  line-height: 1.6;
+  color: white;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+#notice-other {
+  font-size: 18px;
+  font-weight: bold;
+  color:white;
+}
+
+#notice-boxes {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 10px;
+  width: 55%;
+  margin-right: 20px;
+}
+
+#notice-boxes > img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+/* 장점 섹션 */
+#content10 {
+  height: 100vh;
+  position: relative;
+}
+
+#main-txt {
+  font-family: 'Galmuri9', serif;
+  font-size: 43px;
+  line-height: 1.3;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+#content10::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22%;
+  left: 41%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/pixelarrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#main-description {
+  font-size: 21px;
+  color: white;
+  line-height: 1.6;
+  position: absolute;
+  top: 33%;
+  left: 42%;
+}
+
+.text-boxes {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 35px 60px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transform-origin: center;
+  display: inline-block;
+  position: absolute;
+}
+
+.item1 {
+  transform: rotate(-18deg);
+  background-color: #f0f0f0;
+  bottom: 400px;
+}
+
+.item2 {
+  transform: rotate(-18deg);
+  background-color: #fff59a;
+  padding: 35px 100px;
+  bottom: 292px;
+}
+
+.item3 {
+  transform: rotate(-18deg);
+  background-color: #fff59a;
+  bottom: 245px;
+  left: 100px;
+}
+
+.item4 {
+  transform: rotate(-18deg);
+  background-color: #eeeeee;
+  padding: 35px 125px;
+  bottom: 120px;
+  left: 35px;
+}
+
+.item5 {
+  transform: rotate(-14deg);
+  background-color: #eeeeee;
+  bottom: 50px;
+  left: 160px;
+}
+
+.item6 {
+  transform: rotate(-8deg);
+  background-color: #fff59a;
+  padding: 35px 85px;
+  bottom: 40px;
+  left: 38%;
+}
+
+.item7 {
+  transform: rotate(15deg);
+  background-color: #fff59a;
+  padding: 35px 115px;
+  bottom: 330px;
+  right: 8%;
+}
+
+.item8 {
+  transform: rotate(20deg);
+  background-color: #eeeeee;
+  padding: 35px 115px;
+  bottom: 290px;
+  right: 16%;
+}
+
+.item9 {
+  transform: rotate(20deg);
+  background-color: #f0f0f0;
+  padding: 35px 165px;
+  bottom: 240px;
+  right: 26%;
+}
+
+.item10 {
+  transform: rotate(5deg);
+  background-color: #eeeeee;
+  padding: 35px 170px;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* 컨택 섹션 */
+#content11 {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+#contact-info > h1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12vw;
+  white-space: nowrap;
+}
+
+#email {
+  font-size: 28px;
+  text-align: right;
+  margin-bottom: 10%;
+}
+
+#phone {
+  font-size: 28px;
+  margin-top: 10%;
+}
+
+#eggs-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#eggs-container > img {
+  position: absolute;
+}
+
+
+#contactegg {
+  width: 280px;
+  transform: rotate(118deg);
+  top: 0;
+  left: 40%;
+}
+
+#contactegg2 {
+  width: 200px;
+  transform: rotate(-28deg);
+  left: 35%;
+  top: 35%;
+}
+
+#contactegg3 {
+  width: 390px;
+  transform: rotate(8deg);
+  bottom: 0;
+  left: 45%;
+}
+
+#eggs-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12%;
+  left: 56%;
+  width: 45px;
+  height: 45px;
+  background-image: url("../images/pixel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#eggs-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 13%;
+  left: 38%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/pixel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* 애니메이션 효과(메인 계란이미지) */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-95px);
+  }
+}
+
+#metalegg {
+  animation: float 2s ease-in-out infinite;
+}
+
+#gardenegg {
+  animation: float 3s ease-in-out infinite;
+}
+
+#furegg {
+  animation: float 4s ease-in-out infinite;
+}
+
+
+/* 위에서부터 아래로 떨어지기 */
+/*아래로 떨어졌을 때 각 아이템 요소들 css로 지정했던 위치로 떨어지도록 설정 필요 */
+
+/* 애니메이션 효과(장점섹션) */
+@keyframes drop {
+  0% {
+      opacity: 0;
+      transform: translateY(-200px) rotate(0deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) rotate(var(--rotate)); 
+  }
+}
+
+.text-boxes {
+  position: absolute;
+  opacity: 0;
+}
+
+.text-boxes.on {
+  animation: drop 1s ease-out forwards;
+}
+
+.item1 {
+  bottom: 400px;
+  --rotate: -18deg;
+  background-color: #f0f0f0;
+}
+
+.item2 {
+  bottom: 292px;
+  --rotate: -18deg;
+  background-color: #fff59a;
+  padding: 35px 100px;
+}
+
+.item3 {
+  bottom: 245px;
+  left: 100px;
+  --rotate: -18deg;
+  background-color: #fff59a;
+}
+
+.item4 {
+  bottom: 120px;
+  left: 35px;
+  --rotate: -18deg;
+  background-color: #eeeeee;
+  padding: 35px 125px;
+}
+
+.item5 {
+  bottom: 50px;
+  left: 160px;
+  --rotate: -14deg;
+  background-color: #eeeeee;
+}
+
+.item6 {
+  bottom: 40px;
+  left: 38%;
+  --rotate: -8deg;
+  background-color: #fff59a;
+  padding: 35px 85px;
+}
+
+.item7 {
+  bottom: 330px;
+  right: 8%;
+  --rotate: 15deg;
+  background-color: #fff59a;
+  padding: 35px 115px;
+}
+
+.item8 {
+  bottom: 290px;
+  right: 16%;
+  --rotate: 20deg;
+  background-color: #eeeeee;
+  padding: 35px 115px;
+}
+
+.item9 {
+  bottom: 240px;
+  right: 26%;
+  --rotate: 20deg;
+  background-color: #f0f0f0;
+  padding: 35px 165px;
+}
+
+.item10 {
+  bottom: 30px;
+  right: 30px;
+  --rotate: 5deg;
+  background-color: #eeeeee;
+  padding: 35px 170px;
+}
+
+
