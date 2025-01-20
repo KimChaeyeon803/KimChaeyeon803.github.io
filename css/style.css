@@ -145,7 +145,7 @@ header {
   content: "";
   display: block;
   width: 1px; 
-  height: 30px; 
+  height: 35px; 
   background-color: white; 
   margin: 55px auto 0; 
 }
@@ -483,32 +483,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-}
-
-#project2-section > a {
-  display: inline-block;
-  width: 100%; 
-  max-width: 700px;
-  height: auto;
-  overflow: hidden;
-  z-index: 5;
-}
-
-#project2-section > a > img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-left: 100px;
 }
 
 #project2-section::before {
   content: "";
   position: absolute;
   top: 0;
-  right: 5.5%;
-  width: 30%;
-  height: 55%;
+  right: 27%;
+  width: 22%;
+  height: 65%;
   background-color: rgba(255, 255, 255, 0.3);
   z-index: 1;
 }
@@ -516,8 +499,8 @@ header {
 #project2-section > img {
   width: 61%;
   margin-bottom: 20px;
-  padding-left: 30%;
-  z-index: 2;
+  padding-left: 15%;
+  z-index: 5;
 }
 
 #project2-content {
@@ -551,6 +534,15 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 20px;
+}
+
+.project > #logoimage {
+  position: absolute;
+  width: 325px;
+  top: 27%;
+  left: 48%;
+  z-index: 3;
+  animation: spin 10s linear infinite;
 }
 
 /* 서울시립미술관 리뉴얼 디자인 섹션 */
