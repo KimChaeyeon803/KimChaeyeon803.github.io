@@ -436,10 +436,18 @@ header {
   z-index: 2;
 }
 
+.project>img {
+  position: absolute;
+  width: 325px;
+  top: 38%;
+  left: 26%;
+  animation: spin 10s linear infinite;
+}
+
 /* 프롬잇 리뉴얼 디자인 섹션 */
 #project2-title {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   font-family: "PT Sans", sans-serif;
   font-size: 23vw;
   color: white;
@@ -453,15 +461,32 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+#project2-section > a {
+  display: inline-block;
+  width: 100%; 
+  max-width: 700px;
+  height: auto;
+  overflow: hidden;
+  z-index: 5;
+}
+
+#project2-section > a > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 100px;
 }
 
 #project2-section::before {
   content: "";
   position: absolute;
   top: 0;
-  right: 27%;
-  width: 22%;
-  height: 65%;
+  right: 5.5%;
+  width: 30%;
+  height: 55%;
   background-color: rgba(255, 255, 255, 0.3);
   z-index: 1;
 }
@@ -478,8 +503,8 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-right: 20px;
-  margin-bottom: 10%;
+  margin-right: 30px;
+  margin-bottom: 12%;
 }
 
 #content2-title {
@@ -1009,6 +1034,15 @@ header {
   animation: float 4s ease-in-out infinite;
 }
 
+/* 회전 애니메이션 정의 */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* 위에서부터 아래로 떨어지기 */
 /*아래로 떨어졌을 때 각 아이템 요소들 css로 지정했던 위치로 떨어지도록 설정 필요 */
@@ -1109,4 +1143,41 @@ header {
   padding: 35px 170px;
 }
 
+/* 1200px 이상: 기본 스타일 유지 */
 
+@media (max-width: 1199px) {
+  /* 태블릿: 768px ~ 1199px */
+  header {
+    padding: 20px;
+  }
+
+  #menu {
+    gap: 30px;
+  }
+
+  #content0 #intro-text h4 {
+    font-size: 36px;
+  }
+
+  #eggs img {
+    width: 70%; /* 이미지 크기 축소 */
+    height: auto;
+  }
+
+  #content1, #content2 {
+    flex-direction: column; /* 레이아웃 수직 정렬 */
+    padding: 20px;
+  }
+
+  #content1-right, #content2-right {
+    margin: 0; /* 여백 제거 */
+  }
+
+  #project-title, #project2-title, #project3-title {
+    font-size: 16vw; /* 텍스트 크기 조정 */
+  }
+
+  .project > img {
+    width: 60%; /* 프로젝트 이미지 축소 */
+  }
+}
